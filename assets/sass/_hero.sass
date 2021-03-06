@@ -11,7 +11,7 @@
   z-index: 1
   overflow: hidden
   border-radius: 10px
-  min-height: 570px
+  min-height: 470px
   background-color: #fff
   .left
     flex-basis: 75%
@@ -37,6 +37,7 @@
       top: 0
       bottom: 0
       z-index: 0
+      object-fit: cover
     .author
       display: flex
       align-items: center
@@ -80,8 +81,8 @@
         line-height: 50px
         color: #ffffff
         font-family: 'Roboto Slab', serif
-        margin-top: 20px
-        margin-bottom: 50px
+        margin-top: 15px
+        margin-bottom: 30px
       &-text
         z-index: 2
     .more
@@ -112,10 +113,11 @@
         padding: 0
         list-style: none
     .post
-      padding: 17px 25px 19px 25px
+      padding: 17px 20px 19px 20px
       margin: 0
       border-top: 1px solid #D9DADB
       min-height: 100px
+      max-height: 110px
       &:hover
         background-color: #F5F5F5
       &-categories
