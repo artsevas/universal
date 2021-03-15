@@ -44,7 +44,8 @@ function universal_theme_widgets_init() {
 	);
 }
 add_action( 'widgets_init', 'universal_theme_widgets_init' );
-
+?>
+<?php
 /**
  * Добавление нового виджета Downloader_Widget.
  */
@@ -173,7 +174,9 @@ function register_downloader_widget() {
 	register_widget( 'Downloader_Widget' );
 }
 add_action( 'widgets_init', 'register_downloader_widget' );
+?>
 
+<?php
 /**
  * Добавление нового виджета Social.
  */
@@ -315,7 +318,9 @@ function register_social_widget() {
 	register_widget( 'Social_Widget' );
 }
 add_action( 'widgets_init', 'register_social_widget' );
+?>
 
+<?php
 // connect styles and scripts
 function enqueue_universal_style() {
 	wp_enqueue_style( 'style', get_stylesheet_uri() );
@@ -347,4 +352,4 @@ function delete_intermediate_image_sizes( $sizes ){
 		'2048x2048',
 	] );
 }
-
+?>
